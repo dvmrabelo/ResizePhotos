@@ -1,0 +1,9 @@
+<h1>Resize Photos</h1>
+
+<% @body["images"].each do |item| %>
+  <p>
+    <img src=<%=item["url"]%> style="width:320px;height:240px;">
+    <img src=<%=item["url"]%> style="width:384px;height:288px;">
+    <img src=<%=item["url"]%> style="width:640px;height:480px;">
+  </p>
+<% end %>
